@@ -14,6 +14,7 @@ export default {
   				'sans-serif'
   			],
   			display: [
+  				'Great Vibes',
   				'Cal Sans',
   				'Inter',
   				'system-ui',
@@ -91,6 +92,9 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
+        'brand-alabaster': '#F5EBE0',
+        'brand-taupe': '#D5BDAF',
+        'brand-champagne': '#E3D5CA',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			muted: {

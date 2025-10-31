@@ -1,0 +1,23 @@
+<svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="sketchy">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="5" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" />
+    </filter>
+  </defs>
+  <g stroke="#5D4037" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="filter: url(#sketchy);">
+    <!-- Stem -->
+    <path d="M100,95 C 90,70 110,60 100,40" />
+    <!-- Leaves -->
+    <path d="M100,75 C 115,70 120,60 105,65" />
+    <path d="M100,65 C 85,60 80,50 95,55" />
+    <!-- Petals -->
+    <path d="M100,40 C 80,35 75,15 90,10" fill="#F8BBD0" />
+    <path d="M100,40 C 120,35 125,15 110,10" fill="#F8BBD0" />
+    <path d="M100,40 C 85,45 70,30 80,5" fill="#F48FB1" />
+    <path d="M100,40 C 115,45 130,30 120,5" fill="#F48FB1" />
+    <path d="M100,40 C 90,20 110,20 100,5" fill="#F06292" />
+    <!-- Center -->
+    <circle cx="100" cy="35" r="5" fill="#FFEB3B" />
+  </g>
+</svg>
