@@ -88,8 +88,14 @@ function watchDependenciesPlugin() {
 // https://vite.dev/config/
 export default ({ mode }: { mode: string }) => {
   const env = loadEnv(mode, process.cwd());
+  // Exclude Cloudflare plugin when building for Vercel
+  const isVercel = process.env.VERCEL === '1' || process.env.VERCEL_ENV;
+  const plugins = [react(), watchDependenciesPlugin()];
+  if (!isVercel) {
+    plugins.splice(1, 0, cloudflare());
+  }
   return defineConfig({
-    plugins: [react(), cloudflare(), watchDependenciesPlugin()],
+    plugins,
     build: {
       minify: true,
       sourcemap: "inline", // Use inline source maps for better error reporting
