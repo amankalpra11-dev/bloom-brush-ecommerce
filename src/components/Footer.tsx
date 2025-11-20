@@ -20,7 +20,7 @@ export function Footer() {
         </div>
         <div className="mt-8 border-t border-brand-taupe pt-8 text-center text-sm text-stone-500">
           <p>&copy; {new Date().getFullYear()} Bloom & Brush. All rights reserved.</p>
-          <p className="mt-1">Built with ❤️ at Cloudflare</p>
+          <p className="mt-1">Built with love by Pehchanly</p>
         </div>
       </div>
     </footer>
